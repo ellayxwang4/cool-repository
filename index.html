@@ -26,19 +26,10 @@ Original file line number	Diff line number	Diff line change
     </p>
     <script>
         var counter = 0;
-        var colorOption=["red","orange","yellow","green","blue","blueviolet"];
+        var colorOption=[red,orange,yellow,green,blue,blueviolet];
         var element=document.getElementById('myId');
-        var element2=document.getElementById('myh1');
         element.addEventListener("click",()=>{
             window.prompt('cool promp')
-        })
-        element2.addEventListener("hover",()=>{
-            <style>
-                h1{
-                    color:colorOption[counter%6]
-                }
-            </style>
-            counter+=1
         })
     </script>
     
