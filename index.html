@@ -20,16 +20,25 @@ Original file line number	Diff line number	Diff line change
     </style>
 </head>
 <body>
-    <h1>This is my cool web page</h1>
+    <h1 id="myh1">This is my cool web page</h1>
     <p id="myId">
         This is some content for my coool web static page
     </p>
     <script>
         var counter = 0;
-        var colorOption=["red","orange","yellow","green","blue","purple"];
+        var colorOption=["red","orange","yellow","green","blue","blueviolet"];
         var element=document.getElementById('myId');
+        var element2=document.getElementById('myh1');
         element.addEventListener("click",()=>{
             window.prompt('cool promp')
+        })
+        element2.addEventListener("hover",()=>{
+            <style>
+                h1{
+                    color:colorOption[counter%6]
+                }
+            </style>
+            counter+=1
         })
     </script>
     
